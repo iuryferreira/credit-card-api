@@ -1,3 +1,4 @@
+using CreditCard.Api.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CreditCard.Api.Database
@@ -8,8 +9,7 @@ namespace CreditCard.Api.Database
         {
         }
 
-        public DbSet<Person> Persons { get; set; }
-        public DbSet<Card> Cards { get; set; }
-
+        public DbSet<Person> Persons { get; private set; }
+        public DbSet<Card> Cards { get; private set; }
     }
 }

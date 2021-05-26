@@ -16,11 +16,10 @@ namespace CreditCard.Api
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         public void ConfigureServices (IServiceCollection services)
         {
-
             services.AddControllers();
             services.AddMemoryCache();
             services.AddDbContext<Context>(options => options.UseInMemoryDatabase("Database"));
@@ -36,11 +35,8 @@ namespace CreditCard.Api
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
