@@ -23,7 +23,7 @@ namespace CreditCard.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Card>>> ListAsync ([FromQuery] string email)
+        public async Task<ActionResult<IEnumerable<Card>>> List ([FromQuery] string email)
         {
 
             return string.IsNullOrEmpty(email) ?
