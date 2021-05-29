@@ -1,4 +1,6 @@
-## Introdução
+# 🌐 Gere cartões virtuais utilizando .NET + EF + API Rest
+
+## 🔤 Introdução
 
 Olá! Este projeto tem como objetivo a criação de uma API REST que fornece um sistema de geração de número de cartão de crédito virtual. 
 
@@ -11,7 +13,7 @@ O .NET é uma tecnologia que contém todas as ferramentas para realizarmos este 
 
 Também utilizaremos o terminal de comando `bash` ou `powershell` para executar os comandos do dotnet.
 
-### Passos Iniciais
+### 👣 Passos Iniciais
 
 Primeiro, devemos criar a nossa solução. Para isso utilizaremos o seguinte comando:
 
@@ -30,7 +32,7 @@ cd 'credit-card-api' && dotnet sln add 'src/CreditCard.Api'
 
 Com isso, temos a nossa solução e projeto criados, e podemos abrir o editor de código com o comando `code .`, ou ir até o editor e selecionarmos a pasta do projeto. Como primeiro passo da construção da aplicação vamos configurar o Entity Framework e implementar os nossos modelos de dados.
 
-## Banco de Dados
+## 📄 Banco de Dados
 
 Para utilizar o Entity Framework devemos instalar os pacotes referentes a ele, e podemos utilizar o terminal para isto executando o comando abaixo no diretório da nossa solução:
 
@@ -46,7 +48,7 @@ dotnet add 'src/CreditCard.Api' package Microsoft.EntityFrameworkCore.InMemory
 
 Após instalação dos pacotes, iremos à implementação dos modelos.
 
-### Modelos
+### 📐 Modelos
 
 Para integração da nossa API com o Banco de dados devemos criar os nossos modelos de dados, que são a representação no C# das informações as serem salvas e que serão utilizados pelo **Entity Framework**. 
 
@@ -90,7 +92,7 @@ namespace CreditCard.Api.Models
 ```
 Os campos `Id` tem como objetivo serem os identificadores únicos de cada Pessoa e Cartão. Os campos PersonId e Person na classe `Card` se referem ao relacionamento estabelecido entre eles, que será refletido no banco de dados devido ao mapeamento do Entity Framework.
 
-### Contexto de Banco de Dados
+### 📋 Contexto de Banco de Dados
 
 Assim que os nossos modelos estiverem criados, devemos criar a classe do nosso contexto de banco de dados, a `Context`, que utilizaremos para realizar as queries. 
 
@@ -149,7 +151,7 @@ namespace CreditCard.Api
 
 Agora que temos os nossos modelos e o contexto de banco de dados criados, devemos dar início a implementação dos serviços.
 
-## Serviços
+## 👷 Serviços
 
  Os serviços tem como objetivo centralizar a lógica das funcionalidades da API, melhorando a divisão de responsabilidades de cada classe, facilitando o entendimento e a manutenção do código. Eles utilizarão o `Context` e serão utilizados pelos `Controllers` que implementam os endpoints.
 
@@ -296,7 +298,7 @@ namespace CreditCard.Api
 
 Por fim, com as nossas classes de serviço criadas, devemos implementar os nossos endpoints.
 
-## Endpoints
+## 🌐 Endpoints
 
 O *controller*, que herda da classe `ControllerBase`, fica reponsável por definir os endpoints, os parâmetros a serem recebidos, as rotas, entre outras tarefas. Para isso criaremos o `CreditCardController` na pasta *Controllers*.
 
@@ -366,7 +368,7 @@ Isto já é suficiente para termos nossa API funcionando e pronta para o uso. Pa
 
 ## Conclusão
 
-Esses foram os passos para implementação da API baseada no desafio recebido. Caso você queira testá-la, acesse o exemplo que está hospedado no **Heroku** clicando [aqui](). Além disso, todo o código-fonte está neste repositório e pode ser acessado a qualquer momento.
+Esses foram os passos para implementação da API baseada no desafio recebido. Caso você queira testá-la com algum cliente *http*, acesse o exemplo que está hospedado no **Heroku** clicando [aqui](https://vaivoa-credit-card.herokuapp.com/creditcards).  Além disso, todo o código-fonte está neste repositório e pode ser acessado a qualquer momento.
 
 
 > Autor : [Iury F. A. Ferreira](https://www.linkedin.com/in/iury-ferreira-68ba35130/) - iury.franklinferreira@gmail.com
