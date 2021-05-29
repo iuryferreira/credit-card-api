@@ -1,8 +1,12 @@
 ## Introdução
 
-Neste projeto temos como objetivo a criação de uma API REST que fornece um sistema de geração de número de cartão de crédito virtual. Ela deverá gerar números aleatórios para o pedido de novo cartão. Cada cartão gerado deve estar associado a um email para identificar a pessoa que está utilizando. 
+Olá! Este projeto tem como objetivo a criação de uma API REST que fornece um sistema de geração de número de cartão de crédito virtual. 
+
+Ela deverá gerar números aleatórios para o pedido de novo cartão e cada cartão gerado deve estar associado a um email para identificar a pessoa que está utilizando. 
 
 O .NET é uma tecnologia que contém todas as ferramentas para realizarmos este trabalho. Para isso, utilizaremos o .NET 5, última versão estável do SDK lançada até o momento, e o Visual Studio Code, um editor de código open-source amplamente difundido na comunidade. Também utilizaremos o terminal de comando `bash` ou `powershell` para executar os comandos do dotnet.
+
+### Passos Iniciais
 
 Primeiro, devemos criar a nossa solução. Para isso utilizaremos o seguinte comando:
 
