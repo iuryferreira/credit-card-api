@@ -369,6 +369,4 @@ Isto já é suficiente para termos nossa API funcionando e pronta para o uso. Pa
 Esses foram os passos para implementação da API baseada no desafio recebido. Caso você queira testá-la, acesse o exemplo que está hospedado no **Heroku** clicando [aqui](). Além disso, todo o código-fonte está neste repositório e pode ser acessado a qualquer momento.
 
 
-
-
-
+> Autor : [Iury F. A. Ferreira](https://www.linkedin.com/in/iury-ferreira-68ba35130/) - iury.franklinferreira@gmail.com
