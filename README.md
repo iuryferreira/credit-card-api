@@ -4,7 +4,17 @@ Olá! Este projeto tem como objetivo a criação de uma API REST que fornece um 
 
 Ela deverá gerar números aleatórios para o pedido de novo cartão e cada cartão gerado deve estar associado a um email para identificar a pessoa que está utilizando. 
 
-O .NET é uma tecnologia que contém todas as ferramentas para realizarmos este trabalho. Para isso, utilizaremos o .NET 5, última versão estável do SDK lançada até o momento, e o Visual Studio Code, um editor de código open-source amplamente difundido na comunidade. Também utilizaremos o terminal de comando `bash` ou `powershell` para executar os comandos do dotnet.
+<div style="display:flex;">
+    <div style="flex:8">
+    O .NET é uma tecnologia que contém todas as ferramentas para realizarmos este trabalho. Para isso, utilizaremos o .NET 5, última versão estável do SDK lançada até o momento, e o Visual Studio Code, um editor de código open-source amplamente difundido na comunidade. 
+    </div>
+    <div style="flex:1;">
+        <img src="https://rafaelcruz.azurewebsites.net/wp-content/uploads/2019/10/Microsoft_.NET_logo.png" width="100px">
+    </div>
+</div>
+
+
+Também utilizaremos o terminal de comando `bash` ou `powershell` para executar os comandos do dotnet.
 
 ### Passos Iniciais
 
