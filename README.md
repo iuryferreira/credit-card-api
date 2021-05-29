@@ -6,7 +6,7 @@ Ela deverá gerar números aleatórios para o pedido de novo cartão e cada cart
 
 
 <div align="center">
-        <img src="https://miro.medium.com/max/2728/1*7I6oONv2fGLQJcNEFA4QSw.png" height="200px">
+        <img src="https://neosmart.net/blog/wp-content/uploads/2019/06/dot-NET-Standard-Logo-Rectangle.png" height="200px" width="100%">
 </div>
 
 O .NET é uma tecnologia que contém todas as ferramentas para realizarmos este trabalho. Para isso, utilizaremos o .NET 5, última versão estável do SDK lançada até o momento, e o Visual Studio Code, um editor de código open-source amplamente difundido na comunidade. 
