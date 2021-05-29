@@ -147,9 +147,11 @@ namespace CreditCard.Api
 ```
 > A classe `Startup` tem vários outros elementos que vem por padrão e que estão representados por esses "...", mas que estão sendo ignorados no exemplo a fim de mostrar somente as alterações realizadas. A classe completa pode ser vista clicando [aqui](https://github.com/iuryferreira/credit-card-api/blob/main/src/CreditCard.Api/Startup.cs).
 
+Agora que temos os nossos modelos e o contexto de banco de dados criados, devemos dar início a implementação dos serviços.
+
 ## Serviços
 
-Agora que temos os nossos modelos e o contexto de banco de dados criados, devemos dar início a implementação dos serviços. Os serviços tem como objetivo centralizar a lógica das funcionalidades da API, melhorando a divisão de responsabilidades de cada classe, facilitando o entendimento e a manutenção do código. Eles utilizarão o `Context` e serão utilizados pelos `Controllers` que implementam os endpoints.
+ Os serviços tem como objetivo centralizar a lógica das funcionalidades da API, melhorando a divisão de responsabilidades de cada classe, facilitando o entendimento e a manutenção do código. Eles utilizarão o `Context` e serão utilizados pelos `Controllers` que implementam os endpoints.
 
 Para podermos cadastrar pessoas iremos criar na pasta *Services* a classe `PersonService`, que ficará responsável por isso, como mostrado abaixo:
 
@@ -292,10 +294,11 @@ namespace CreditCard.Api
 ```
 > A classe `Startup` tem vários outros elementos que vem por padrão e que estão representados por esses "...". Estão sendo ignorados no exemplo a fim de mostrar somente as alterações realizadas. A classe completa pode ser vista clicando [aqui](https://github.com/iuryferreira/credit-card-api/blob/main/src/CreditCard.Api/Startup.cs).
 
+Por fim, com as nossas classes de serviço criadas, devemos implementar os nossos endpoints.
 
 ## Endpoints
 
-Por fim, com as nossas classes de serviço criadas, devemos implementar o *controller* que ficará reponsável por definir os endpoints, os parâmetros a serem recebidos, as rotas, entre outras tarefas. Para isso criaremos o `CreditCardController` na pasta *Controllers*.
+O *controller*, que herda da classe `ControllerBase`, fica reponsável por definir os endpoints, os parâmetros a serem recebidos, as rotas, entre outras tarefas. Para isso criaremos o `CreditCardController` na pasta *Controllers*.
 
 Nosso classe deve ser da seguinte forma:
 
@@ -359,15 +362,11 @@ Cada endpoint tem um método com responsabilidades distintas, sendo que:
 - `List`: recebe o email como uma `string` através da *query string* da requisição e retorna a lista de cartões baseado no email informado, com um código de status 200. Caso o email não seja informado, retorna um objeto com uma mensagem de erro e código de status 400; 
 
 
-Isto já é suficiente para termos nossa API funcionando e pronta para o uso. 
+Isto já é suficiente para termos nossa API funcionando e pronta para o uso. Para executarmos o servidor e termos acesso a API podemos utilzar o comando `dotnet run --project src/CreditCard.Api`, que normalmente é usado em desenvolvimento. Se quisermos a versão final pronta pra publicação basta utilizarmos o `dotnet publish`.
 
 ## Conclusão
 
-Para executarmos o servidor e termos acesso a API podemos utilzar o comando `dotnet run --project src/CreditCard.Api`, que normalmente é usado em desenvolvimento. Se quisermos a versão final pronta pra publicação basta utilizarmos o `dotnet publish`.
-
-Esses foram os passos para implementação da API baseada no desafio recebido. Caso queira testá-la pode acessar o exemplo que está hospedado no **Heroku** clicando [aqui](). 
-
-Todo o código-fonte está neste repositório e pode ser acessado a qualquer momento.
+Esses foram os passos para implementação da API baseada no desafio recebido. Caso você queira testá-la, acesse o exemplo que está hospedado no **Heroku** clicando [aqui](). Além disso, todo o código-fonte está neste repositório e pode ser acessado a qualquer momento.
 
 
 
