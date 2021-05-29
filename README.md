@@ -1,4 +1,4 @@
-# 🌐 Gere cartões virtuais utilizando .NET + EF + API Rest
+# 🌐 Gere cartões virtuais utilizando .NET
 
 ## 🔤 Introdução
 
