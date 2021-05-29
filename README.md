@@ -366,7 +366,7 @@ Cada endpoint tem um método com responsabilidades distintas, sendo que:
 
 Isto já é suficiente para termos nossa API funcionando e pronta para o uso. Para executarmos o servidor e termos acesso a API podemos utilzar o comando `dotnet run --project src/CreditCard.Api`, que normalmente é usado em desenvolvimento. Se quisermos a versão final pronta pra publicação basta utilizarmos o `dotnet publish`.
 
-## Conclusão
+## 🏁 Conclusão
 
 Esses foram os passos para implementação da API baseada no desafio recebido. Caso você queira testá-la com algum cliente *http*, acesse o exemplo que está hospedado no **Heroku** clicando [aqui](https://vaivoa-credit-card.herokuapp.com/creditcards).  Além disso, todo o código-fonte está neste repositório e pode ser acessado a qualquer momento.
 
